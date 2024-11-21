@@ -8,7 +8,7 @@ from scipy.special import binom
 def narayana(n, k):
     if k == 0 or k > n:
         return 0
-    return (1.0 / n) * binom(n, k) * binom(n, k - 1)
+    return (1 / n) * binom(n, k) * binom(n, k - 1)
 
 # Función Tribonacci
 def trib(n):
@@ -35,3 +35,5 @@ def maldad(n):
 if __name__ == "__main__":
     n = int(input("Ingrese el valor de n: "))
     print(maldad(n))
+    
+# El valor de n más grande que pude probar sin que explotara fue 30000000
