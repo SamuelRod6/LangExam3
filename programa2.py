@@ -2,14 +2,15 @@
 
 # Creamos un tipo ConjuntoPersonas que tiene un constructor que inicializa una lista vacía
 class ConjuntoPersonas:
+    def __init__(self):
+        self.personas = [] 
+    
     # Creamos el tipo Persona con un constructor que recibe un nombre y una edad
     class Persona:
         def __init__(self, nombre, edad):
             self.nombre = nombre
             self.edad = edad
     
-    def __init__(self):
-        self.personas = [] 
 
     def agregar_persona(self, nombre, edad):
         self.personas.append(self.Persona(nombre, edad))
